@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
+    <h1>Cifra de César</h1>
+    <p>A cifra de César tem origem do imperador romano César para comunicação com seu exército de forma segura codificando o texto.</p>
+
+    <p id="textCipher"></p>
     <div id="root"></div>
+    <input type="text" id="textTest" placeholder="Seu Texto" />
+    <input type="text" id="textNum" placeholder="Número de deslocamento" />
+    <input type="button" id="btnenviartext" value="cifrar" onclick="pegaText()" />
+    <p id="textCipherTwo"></p>
+    <input type="button" id="btdecifrar" value="decifrar" onclick="pegaTextTwo()" />
+
+
+
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+    <script src="tests.js"></script>
+</body>
+
 </html>
