@@ -7,7 +7,6 @@ function cifrar() {
     let letterCipherEnd = "";
     for (let i = 0; i < text.length; i++) {
         letter.push(text.charCodeAt(i))
-        console.log(letter)
     }
 
     for (let j = 0; j < letter.length; j++) {
@@ -29,4 +28,4 @@ function cifrar() {
 
 }
 
-function decifrar()
+//function decifrar()
