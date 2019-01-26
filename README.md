@@ -203,8 +203,8 @@ Descrição do processo de desenvolvimento
 -Criar um botão para cifrar e outro para decifrar;
 
 ## Fluxograma
-![Imagem Diagrama de Blocos]
-(https://drive.google.com/file/d/1qGibHo036xkXhcOd6hpJPkJektdl6U2R/view?usp=sharing)
+! [Imagem Diagrama de Blocos]
+(https://github.com/MarianaPrimante/caesar-cipher/blob/master/src/img/fluxograma.jpg)
 
 ### Parte Obrigatória
 
