@@ -197,6 +197,14 @@ projeto, tendo em conta o desenvolvimento de suas _habilidades socioemocionais_:
   não será possível apreciar todo o esforço e trabalho investido.
 
 ## Checklist
+Descrição do processo de desenvolvimento
+-Desenvolver e relacionar arquivo HTML, JS e CSS;
+-Criar uma caixa de texto para o texto a cifrar/decifrar e outra para o deslocamento;
+-Criar um botão para cifrar e outro para decifrar;
+
+## Fluxograma
+![Imagem Diagrama de Blocos]
+(https://drive.google.com/file/d/1qGibHo036xkXhcOd6hpJPkJektdl6U2R/view?usp=sharing)
 
 ### Parte Obrigatória
 
