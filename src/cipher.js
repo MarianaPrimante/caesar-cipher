@@ -16,7 +16,9 @@ function cifrar() {
             letterDesl = (((letter[j] - 65) + numDeslOrig) % 26) + 65
         } else if (letter[j] >= 97 && letter[j] <= 122) {
             letterDesl = (((letter[j] - 97) + numDeslOrig) % 26) + 97
-        }
+        } else if(letter[j]=32){
+            letterDesl = (letter[j]=32)
+          }
         letterCipher.push(letterDesl)
 
     }
@@ -46,7 +48,9 @@ function decifrar(){
             letterDesl = (((letter[j] - 90) - numDeslOrig) % 26) + 90
         } else if (letter[j] >= 97 && letter[j] <= 122) {
             letterDesl = (((letter[j] - 122) - numDeslOrig) % 26) + 122
-        }
+        } else if(letter[j]=32){
+            letterDesl = (letter[j]=32)
+          }
         letterCipher.push(letterDesl)
 
     }
