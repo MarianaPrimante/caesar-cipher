@@ -1,0 +1,62 @@
+body {
+    background-image: url("aniversario.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: right;
+}
+
+p {
+    text-align: right;
+}
+
+#text {
+    position: absolute;
+    top: 350%;
+    left: 80%;
+}
+
+#textNum {
+    position: absolute;
+    top: 380%;
+    left: 80%;
+}
+
+#btncifrar {
+    position: absolute;
+    top: 410%;
+    left: 80%;
+}
+
+#textResp {
+    position: absolute;
+    top: 440%;
+    left: 80%;
+}
+
+#textTwo {
+    position: absolute;
+    top: 500%;
+    left: 80%;
+}
+
+#textNumTwo {
+    position: absolute;
+    top: 530%;
+    left: 80%;
+}
+
+#btndecifrar {
+    position: absolute;
+    top: 560%;
+    left: 80%;
+}
+
+#textRespDec {
+    position: absolute;
+    top: 590%;
+    left: 80%;
+}

@@ -15,17 +15,21 @@
     <div id="root"></div>
     <input type="text" id="text" placeholder="Seu Texto" />
     <input type="number" id="textNum" placeholder="Número de deslocamento" />
-    <input type="button" id="btncifrar" value="cifrar" onclick="cifrar()" />
-    
+    <input type="button" id="btncifrar" value="cifrar" onclick="encode()" />
+
+    <textarea id="textResp"></textarea>
+
     <p id="textCipherTwo"></p>
     <input type="text" id="textTwo" placeholder="Seu Texto" />
     <input type="number" id="textNumTwo" placeholder="Número de deslocamento" />
-    <input type="button" id="btndecifrar" value="decifrar" onclick="decifrar()" />
+    <input type="button" id="btndecifrar" value="decifrar" onclick="decode()" />
+
+    <textarea id="textRespDec"></textarea>
 
 
 
-
-    <script src="./cipher.js"></script>
+    <script src="cipher.js"></script>
+    <script src="tests.js"></script>
 </body>
 
 </html>
