@@ -8,23 +8,25 @@
 </head>
 
 <body>
-    <h1>Cifra de César</h1>
-    <p>A cifra de César tem origem do imperador romano César para comunicação com seu exército de forma segura codificando o texto.</p>
+    <h1>Cifra de Aniversário</h1>
+
+    <p id="textbirthday">A cifra de César tem origem do imperador romano César para comunicação com seu exército de forma segura codificando o texto.</p>
 
     <p id="textCipher"></p>
-    <div id="root"></div>
-    <input type="text" id="text" placeholder="Seu Texto" />
-    <input type="number" id="textNum" placeholder="Número de deslocamento" />
-    <input type="button" id="btncifrar" value="cifrar" onclick="encode()" />
+    <div id="root">
+        <input type="text" id="text" placeholder="Seu Texto" />
+        <input type="number" id="textNum" placeholder="Número de deslocamento" />
+        <input type="button" id="btncifrar" value="cifrar" onclick="encode()" />
 
-    <textarea id="textResp"></textarea>
+        <textarea id="textResp"></textarea>
 
-    <p id="textCipherTwo"></p>
-    <input type="text" id="textTwo" placeholder="Seu Texto" />
-    <input type="number" id="textNumTwo" placeholder="Número de deslocamento" />
-    <input type="button" id="btndecifrar" value="decifrar" onclick="decode()" />
+        <p id="textCipherTwo"></p>
+        <input type="text" id="textTwo" placeholder="Seu Texto" />
+        <input type="number" id="textNumTwo" placeholder="Número de deslocamento" />
+        <input type="button" id="btndecifrar" value="decifrar" onclick="decode()" />
 
-    <textarea id="textRespDec"></textarea>
+        <textarea id="textRespDec"></textarea>
+    </div>
 
 
 

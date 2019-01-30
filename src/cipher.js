@@ -15,14 +15,13 @@ function cipher(text, offset) {
     }
 
     for (let j = 0; j < letter.length; j++) {
-        console.log(letter[j])
         let letterDesl = ""
         if (letter[j] >= 65 && letter[j] <= 90) {
             letterDesl = (((letter[j] - 65) + offset) % 26) + 65
         } else if (letter[j] >= 97 && letter[j] <= 122) {
             letterDesl = (((letter[j] - 97) + offset) % 26) + 97
-        } else if (letter[j] = 32) {
-            letterDesl = (letter[j] = 32)
+        } else {
+            letterDesl = letter[j]
         }
         letterCipher.push(letterDesl)
 
@@ -47,6 +46,7 @@ function cipherTwo(text, offset) {
     let letterCipherEnd = "";
     for (let i = 0; i < text.length; i++) {
         letter.push(text.charCodeAt(i))
+
     }
 
     for (let j = 0; j < letter.length; j++) {
