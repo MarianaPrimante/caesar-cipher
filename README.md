@@ -43,7 +43,7 @@ Com os arquivos HTML, JS e CSS relacionados criar uma página que cifre e decifr
 
 * Criar uma caixa de texto para o texto a decifrar, uma para o número do deslocamento e um botão para decifrar
 * Criar uma área de texto para exibir a resposta após apertar o botão de decifrar
-* Criar uma função que execute o deslocamento para cifrar o texto
+* Criar uma função que execute o deslocamento para decifrar o texto
 
 
 ## Diagrama
