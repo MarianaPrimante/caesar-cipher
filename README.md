@@ -203,7 +203,7 @@ Descrição do processo de desenvolvimento
 -Criar um botão para cifrar e outro para decifrar;
 
 ## Diagrama
-![Imagem Diagrama de Blocos]https://github.com/MarianaPrimante/caesar-cipher/blob/master/src/img/Diagramadeblocoscipher.jpeg
+![imagem diagrama de blocos](https://github.com/MarianaPrimante/caesar-cipher/blob/master/src/img/Diagramadeblocoscipher.jpeg)
 
 
 ### Parte Obrigatória
