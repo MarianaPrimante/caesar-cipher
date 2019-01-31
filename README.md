@@ -202,12 +202,9 @@ Descrição do processo de desenvolvimento
 -Criar uma caixa de texto para o texto a cifrar/decifrar e outra para o deslocamento;
 -Criar um botão para cifrar e outro para decifrar;
 
-## Fluxograma
-<<<<<<< HEAD
-![Imagem Diagrama de Blocos](https://github.com/MarianaPrimante/caesar-cipher/blob/master/src/img/fluxograma.jpg)
-=======
-![imagem diagrama de blocos](https://github.com/MarianaPrimante/caesar-cipher/blob/master/src/img/fluxograma.jpg)
->>>>>>> a78aa9ce3d81ccd718eb43346af61842f714ac43
+## Diagrama
+![Imagem Diagrama de Blocos]https://github.com/MarianaPrimante/caesar-cipher/blob/master/src/img/Diagramadeblocoscipher.jpeg
+
 
 ### Parte Obrigatória
 
