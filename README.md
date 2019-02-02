@@ -37,13 +37,13 @@ criptografia, como a cifra de Vigenère, e tem aplicação no sistema ROT13.
 Com os arquivos HTML, JS e CSS relacionados criar uma página que cifre e decifre para o usuário seu texto.
 
 
-* Criar uma caixa de texto para o texto a cifrar, uma para número do deslocamento e um botão para cifrar
-* Criar uma área de texto para exibir a resposta após apertar o botão cifrar
-* Criar uma função que execute o deslocamento para cifrar o texto
+* Criar uma caixa de texto para o texto a cifrar, uma para número do deslocamento e um botão para cifrar.
+* Criar uma área de texto para exibir a resposta após apertar o botão cifrar.
+* Criar uma função que execute o deslocamento para cifrar o texto.
 
-* Criar uma caixa de texto para o texto a decifrar, uma para o número do deslocamento e um botão para decifrar
-* Criar uma área de texto para exibir a resposta após apertar o botão de decifrar
-* Criar uma função que execute o deslocamento para decifrar o texto
+* Criar uma caixa de texto para o texto a decifrar, uma para o número do deslocamento e um botão para decifrar.
+* Criar uma área de texto para exibir a resposta após apertar o botão de decifrar.
+* Criar uma função que execute o deslocamento para decifrar o texto.
 
 
 ## Diagrama
