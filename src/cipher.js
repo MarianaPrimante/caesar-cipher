@@ -62,7 +62,7 @@ function cipherEnd(letterCipher) {
   let letterCipherEnd = "";
   for (let h in letterCipher) {
     let letterConv = String.fromCharCode(letterCipher[h]);
-    letterCipherEnd = letterCipherEnd + letterConv;
+    letterCipherEnd += letterConv;
   }
   return letterCipherEnd;
 }
