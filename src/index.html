@@ -8,31 +8,23 @@
 </head>
 
 <body>
-    <div id="root">
-        <h1>Cifra de Aniversário</h1>
-
-        <p id="textbirthday">Festa surpresa!<br>Baseado na cifra de César use o deslocamento das letras para cifrar e decifrar as conversas e combinarmos tudo sobre a festa!</p>
-
-        <p id="textCipher"></p>
-
-        <input type="text" id="text" placeholder="Seu Texto" />
-        <input type="number" id="textNum" placeholder="Número de deslocamento" />
-        <input type="button" id="btnencode" value="cifrar" onclick="encode()" />
-
-        <textarea id="textResp"></textarea>
-
-        <p id="textCipherTwo"></p>
-        <input type="text" id="textTwo" placeholder="Seu Texto" />
-        <input type="number" id="textNumTwo" placeholder="Número de deslocamento" />
-        <input type="button" id="btndecode" value="decifrar" onclick="decode()" />
-
-        <textarea id="textRespDec"></textarea>
-    </div>
-
-
-
+    <header>
+        <h1 class="title">Cifra de Aniversário</h1>
+    </header>
+    <main>
+        <p class="text-birthday">Festa surpresa!</p>
+        <p class="text-birthday-two">Baseado na cifra de César use o deslocamento das letras para cifrar e decifrar as conversas e combinarmos tudo sobre a festa!</p>   
+        <input type="text" class="text" id="text" placeholder="Seu Texto" />
+        <input type="number" class="text-num" id="text-num" placeholder="Número de deslocamento" />
+        <input type="button" class="btnencode" id="btnencode" value="cifrar" onclick="encode()" />
+        <textarea class="text-resp" id="text-resp"></textarea>
+        <input type="text" class="text-two" id="text-two" placeholder="Seu Texto" />
+        <input type="number" class="text-num-two" id="text-num-two" placeholder="Número de deslocamento" />
+        <input type="button" class="btndecode" id="btndecode" value="decifrar" onclick="decode()" />
+        <textarea class="text-resp-dec" id="text-resp-dec"></textarea>
+    </main>
     <script src="cipher.js"></script>
-    <script src="tests.js"></script>
+    <script src="test/tests.js"></script>
 </body>
 
 </html>

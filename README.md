@@ -58,10 +58,10 @@ Com os arquivos HTML, JS e CSS relacionados criar uma página que cifre e decifr
   cifrado.
 * [ ] Mostrar o resultado da cifra corretamente.
 * [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
-  descifrado.
-* [ ] Mostrar o resultado descifrado corretamente.
+  decifrado.
+* [ ] Mostrar o resultado decifrado corretamente.
 * [ ] Permitir escolher o `offset` (_deslocamento_) a ser usado na
-  cifragem/descifragem.
+  cifragem/decifragem.
 * [ ] Implementa `cipher.encode`.
 * [ ] Implementa `cipher.decode`.
 * [ ] Criar testes unitários.

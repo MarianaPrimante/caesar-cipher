@@ -1,69 +1,68 @@
 function encode() {
-    let text = document.getElementById("text").value;
-    let offset = parseInt(document.getElementById("textNum").value);
-
-    document.getElementById("textResp").innerHTML = cipher(text, offset);
+  let text = document.getElementById("text").value;
+  let offset = parseInt(document.getElementById("text-num").value);
+  document.getElementById("text-resp").innerHTML = cipherEncode(text, offset);
 }
 
-function cipher(text, offset) {
-    let letter = [];
-    let letterCipher = [];
-    let letterCipherEnd = "";
+function cipherEncode(text, offset) {
+  let letter = [];
+  for (let i in text) {
+    letter.push(text.charCodeAt(i));
+  } 
+  return cipherRight(letter, offset);
+}
 
-    for (let i = 0; i < text.length; i++) {
-        letter.push(text.charCodeAt(i))
+function cipherRight(letter, offset) {
+  let letterCipher = [];
+  for (let j in letter) {
+    let letterMove = "";
+    if (letter[j] >= 65 && letter[j] <= 90) {
+      letterMove = (((letter[j] - 65) + offset) % 26) + 65;
+    } else if (letter[j] >= 97 && letter[j] <= 122) {
+      letterMove = (((letter[j] - 97) + offset) % 26) + 97;
+    } else {
+      letterMove = letter[j];
     }
-
-    for (let j = 0; j < letter.length; j++) {
-        let letterDesl = ""
-        if (letter[j] >= 65 && letter[j] <= 90) {
-            letterDesl = (((letter[j] - 65) + offset) % 26) + 65
-        } else if (letter[j] >= 97 && letter[j] <= 122) {
-            letterDesl = (((letter[j] - 97) + offset) % 26) + 97
-        } else {
-            letterDesl = letter[j]
-        }
-        letterCipher.push(letterDesl)
-
-    }
-    for (let h = 0; h < letterCipher.length; h++) {
-        let letterConv = String.fromCharCode(letterCipher[h])
-        letterCipherEnd = letterCipherEnd + letterConv
-    }
-    return letterCipherEnd
+    letterCipher.push(letterMove);
+  }
+  return cipherEnd(letterCipher);
 }
 
 function decode() {
-    let text = document.getElementById("textTwo").value;
-    let offset = parseInt(document.getElementById("textNumTwo").value);
-
-    document.getElementById("textRespDec").innerHTML = cipherTwo(text, offset);
+  let text = document.getElementById("text-two").value;
+  let offset = parseInt(document.getElementById("text-num-two").value);
+  document.getElementById("text-resp-dec").innerHTML = cipherDecode(text, offset);
 }
 
-function cipherTwo(text, offset) {
-    let letter = [];
-    let letterCipher = [];
-    let letterCipherEnd = "";
-    for (let i = 0; i < text.length; i++) {
-        letter.push(text.charCodeAt(i))
+function cipherDecode(text, offset) {
+  let letter = [];
+  for (let i in text) {
+    letter.push(text.charCodeAt(i));
+  }
+  return cipherLeft(letter, offset);
+}
 
+function cipherLeft(letter, offset) {
+  let letterCipher = [];
+  for (let j in letter) {
+    let letterMove = "";
+    if (letter[j] >= 65 && letter[j] <= 90) {
+      letterMove = (((letter[j] - 90) - offset) % 26) + 90;
+    } else if (letter[j] >= 97 && letter[j] <= 122) {
+      letterMove = (((letter[j] - 122) - offset) % 26) + 122;
+    } else {
+      letterMove = letter[j];
     }
+    letterCipher.push(letterMove);
+  }
+  return cipherEnd(letterCipher);
+}
 
-    for (let j = 0; j < letter.length; j++) {
-        let letterDesl = ""
-        if (letter[j] >= 65 && letter[j] <= 90) {
-            letterDesl = (((letter[j] - 90) - offset) % 26) + 90
-        } else if (letter[j] >= 97 && letter[j] <= 122) {
-            letterDesl = (((letter[j] - 122) - offset) % 26) + 122
-        } else {
-            letterDesl = letter[j]
-        }
-        letterCipher.push(letterDesl)
-
-    }
-    for (let h = 0; h < letterCipher.length; h++) {
-        let letterConv = String.fromCharCode(letterCipher[h])
-        letterCipherEnd = letterCipherEnd + letterConv
-    }
-    return letterCipherEnd
+function cipherEnd(letterCipher) {
+  let letterCipherEnd = "";
+  for (let h in letterCipher) {
+    let letterConv = String.fromCharCode(letterCipher[h]);
+    letterCipherEnd = letterCipherEnd + letterConv;
+  }
+  return letterCipherEnd;
 }
